@@ -1,19 +1,127 @@
-# Git-Github
-Repositório destinado a aprender sobre Git e GitHub
+# 🐙 Git & GitHub
 
-# Comandos Úteis:
-git remote add origin(apelido) url: conecta o diretório local ao repositório do git hub
+### 📚 Guia Rápido de Comandos Essenciais
 
-git remote remove origin: usada para trocar o repositório
+Repositório destinado ao aprendizado de **Git e GitHub** 🚀
+Aqui você encontra os principais comandos para controle de versão de forma **simples e prática**.
 
-git remote set-url origin(apelido) nova_url: serve para trocar a url (caso esteja errada)
+---
 
-git remote rename origin novo-origin: trocar o apelido do repositório
+# 🔗 1. Conectar Repositório Local ao GitHub
 
-git pull origin main: puxa os dados do repositório remoto para o local, evitando um conflito de dados e garantindo uma sincronização
+### ➕ Adicionar repositório remoto
 
-git log -> copiar o id e usar git revert id: reverter um commit -> git push origin main
+```bash
+git remote add origin URL_DO_REPOSITORIO
+```
 
-git reset --hard id: apaga o commit, só deve ser utilizado localmente
+📌 Conecta seu projeto local ao GitHub
 
-git commit --amend -m "Mensagem": altera a mensagem do commit antes de ser enviada
+---
+
+### ❌ Remover repositório remoto
+
+```bash
+git remote remove origin
+```
+
+📌 Remove a conexão atual
+
+---
+
+### 🔄 Alterar URL do repositório
+
+```bash
+git remote set-url origin NOVA_URL
+```
+
+📌 Útil quando a URL está errada
+
+---
+
+### ✏️ Renomear repositório remoto
+
+```bash
+git remote rename origin novo-nome
+```
+
+📌 Altera o apelido (ex: origin → upstream)
+
+---
+
+# 🔄 2. Sincronização com o Repositório
+
+### ⬇️ Atualizar projeto (pull)
+
+```bash
+git pull origin main
+```
+
+📌 Baixa alterações do GitHub para sua máquina
+📌 Evita conflitos e mantém tudo atualizado
+
+---
+
+# 🕓 3. Histórico e Controle de Commits
+
+### 📜 Ver histórico
+
+```bash
+git log
+```
+
+---
+
+### ⏪ Reverter um commit (seguro)
+
+```bash
+git revert ID_DO_COMMIT
+git push origin main
+```
+
+📌 Cria um novo commit desfazendo o anterior
+📌 Seguro para projetos compartilhados
+
+---
+
+### ⚠️ Resetar commit (CUIDADO)
+
+```bash
+git reset --hard ID_DO_COMMIT
+```
+
+🚨 Apaga commits permanentemente
+🚨 Use **apenas localmente**
+
+---
+
+# ✏️ 4. Alterar último commit
+
+```bash
+git commit --amend -m "Nova mensagem"
+```
+
+📌 Permite corrigir a mensagem do último commit
+📌 Use antes de fazer push
+
+---
+
+# 💡 Dicas Importantes
+
+* ✅ Sempre faça `git pull` antes de começar a trabalhar
+* ✅ Use `git revert` em projetos com outras pessoas
+* ⚠️ Evite `reset --hard` em repositórios compartilhados
+* 📦 Commits pequenos e organizados ajudam muito
+
+---
+
+# 🎯 Resumo
+
+✔️ Conectar repositório
+✔️ Sincronizar alterações
+✔️ Corrigir commits
+✔️ Evitar conflitos
+
+---
+
+🔥 **Dominar Git é essencial para qualquer desenvolvedor — pratique todos os dias!**
